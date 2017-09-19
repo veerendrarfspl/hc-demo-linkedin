@@ -1,0 +1,24 @@
+
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">  
+
+function countLines() {
+  var divHeight = document.getElementById('content').offsetHeight
+  var lineHeight = parseInt(document.getElementById('content').style.lineHeight);
+  var lines = divHeight / lineHeight;
+  alert("comments: " + lines);
+}
+</script>  
+
+<head>
+<body>
+
+<button onclick="countLines();">Click me</button>
+  <div id="content" style="width: 80px; line-height: 20px">
+    hello how are you? hello how are you? hello how are you? hello how are you?ytryrtyr
+  </div>
+</body>
+<html>
